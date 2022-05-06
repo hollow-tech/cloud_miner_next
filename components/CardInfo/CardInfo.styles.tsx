@@ -22,7 +22,7 @@ export const CardInfoMark = styled.div<{ color: string }>`
 
 export const CardInfoStatus = styled(Typography)`
   margin-block-end: 30px;
-  color: ${({ theme }) => theme.down};
+  color: ${({ theme }) => theme.up};
 `;
 
 export const CardInfoWrapper = styled.div`

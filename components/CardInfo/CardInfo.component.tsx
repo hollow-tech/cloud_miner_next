@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { useContext } from "react";
-import { ThemeContext } from "styled-components";
 import {
   CardInfoBalance,
   CardInfoStyled,
@@ -22,7 +20,7 @@ export const CardInfo: React.VFC<CardInfoProps> = ({
   href,
   ...props
 }) => {
-  const theme = useContext(ThemeContext);
+
 
   return (
     <CardInfoStyled {...props}>

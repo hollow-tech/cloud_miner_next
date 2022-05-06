@@ -10,7 +10,11 @@ bottom: 0;
 background-color: #ccc;
 transition: .4s;
 border-radius: 34px;
-&:before {
+`;
+
+
+export const ToggleCenter = styled.div`
+  display: block;
   position: absolute;
   content: "";
   height: 26px;
@@ -20,8 +24,8 @@ border-radius: 34px;
   background-color: white;
   transition: .4s;
   border-radius: 50%;
-}
-`;
+  
+`
 
 export const Input = styled.input`
    opacity: 0;

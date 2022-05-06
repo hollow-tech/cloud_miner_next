@@ -5,11 +5,13 @@ import { AnimateSharedLayout } from "framer-motion";
 
 import { useIsMounted } from "../../hooks/useIsMounted";
 
-import { Active, AsideItem, AsideLink, AsideList, Icon, Notification } from "./AsideMenu.styles";
+import { Active, AsideItem, AsideLink, AsideList, Icon, LogoWrapper, AsideWrapper  } from "./AsideMenu.styles";
 
 import { AsideMenuProps } from "./AsideMenu.types";
 
-import Logout from "./icons/logout.svg";
+import Logo from './icons/logo2.svg'
+
+
 
 export const AsideMenu: React.VFC<AsideMenuProps> = ({ links, ...props }) => {
   const router = useRouter();
@@ -23,6 +25,10 @@ export const AsideMenu: React.VFC<AsideMenuProps> = ({ links, ...props }) => {
   }
 
   return (
+    <AsideWrapper>
+    <LogoWrapper>
+      <Logo />
+    </LogoWrapper>
     <AsideList {...props}>
       <AnimateSharedLayout>
         {links.map(({ label, href, id, icon, notification }) => (
@@ -31,21 +37,13 @@ export const AsideMenu: React.VFC<AsideMenuProps> = ({ links, ...props }) => {
               <AsideLink>
                 <Icon>{icon}</Icon>
                 {label}
-                {notification && <Notification>{notification}</Notification>}
+                
               </AsideLink>
             </Link>
-            {active === id && <Active layoutId="active" />}
           </AsideItem>
         ))}
-        <AsideItem>
-          <AsideLink as="button">
-            <Icon>
-              <Logout />
-            </Icon>
-            Выход
-          </AsideLink>
-        </AsideItem>
       </AnimateSharedLayout>
     </AsideList>
+    </AsideWrapper>
   );
 };

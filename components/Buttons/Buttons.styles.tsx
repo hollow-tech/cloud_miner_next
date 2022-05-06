@@ -21,7 +21,7 @@ const shared = css<ButtonsProps>`
 
 const contained = css<ButtonsProps>`
   ${shared};
-  color: #FFF;
+  color: ${({ theme }) => theme.clean};
   background-color: ${({ color }) => color};
   border: 2px solid transparent;
   &:hover {
@@ -40,7 +40,7 @@ const contained = css<ButtonsProps>`
 
 const outlined = css<ButtonsProps>`
   ${shared};
-  color: #FFF;
+  color: ${({ theme }) => theme.primary};
   background-color: transparent;
   border: 2px solid ${({ color }) => color};
   &:hover {

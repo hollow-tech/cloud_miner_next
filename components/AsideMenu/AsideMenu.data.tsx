@@ -1,69 +1,101 @@
 import { LinkMenu } from "./AsideMenu.types";
 
+import Panel from "./icons/panel.svg";
 import Balance from "./icons/balance.svg";
-import Ordera from "./icons/ordera.svg";
-import History from "./icons/history.svg";
-import Deposit from "./icons/deposit.svg";
-import Statistics from "./icons/statistics.svg";
+import Powers from "./icons/powers.svg";
+import Deposits from "./icons/deposits.svg";
+import Contracts from "./icons/contracts.svg";
+import Orders from "./icons/orders.svg";
+import Operations from "./icons/operations.svg";
 import Settings from "./icons/settings.svg";
-import Support from "./icons/support.svg";
+import Contact from "./icons/contact.svg";
 import Notifications from "./icons/notifications.svg";
+import Partners from "./icons/partners.svg";
+import FA from "./icons/fa.svg";
+
 
 export const links: LinkMenu[] = [
   {
-    href: "/balance",
-    icon: <Balance />,
-    label: "Баланс",
+    href: "/panel",
+    icon: <Panel />,
+    label: "Панель",
     id: 1,
   },
 
   {
-    href: "/ordera",
-    icon: <Ordera />,
-    label: "Ордера",
+    href: "/balance",
+    icon: <Balance />,
+    label: "Баланс",
     id: 2,
   },
 
   {
-    href: "/history",
-    icon: <History />,
-    label: "История",
+    href: "/powers",
+    icon: <Powers />,
+    label: "Мощности",
     id: 3,
   },
 
   {
-    href: "/deposit",
-    icon: <Deposit />,
-    label: "Депозит",
+    href: "/deposits",
+    icon: <Deposits />,
+    label: "Депозиты",
     id: 4,
   },
 
   {
-    href: "/statistics",
-    icon: <Statistics />,
-    label: "Статистика",
+    href: "/contracts",
+    icon: <Contracts />,
+    label: "Контракты",
     id: 5,
+  },
+
+  {
+    href: "/orders",
+    icon: <Orders />,
+    label: "Заказы",
+    id: 6,
+  },
+
+  {
+    href: "/operations",
+    icon: <Operations />,
+    label: "Операции",
+    id: 7,
   },
 
   {
     href: "/settings",
     icon: <Settings />,
     label: "Настройки",
-    id: 6,
+    id: 8,
   },
 
   {
-    href: "/support",
-    icon: <Support />,
-    label: "Помощь",
-    id: 7,
+    href: "/connection",
+    icon: <Contact />,
+    label: "Связь",
+    id: 9,
   },
 
   {
     href: "/notifications",
     icon: <Notifications />,
     label: "Уведомления",
-    id: 8,
-    notification: 4,
+    id: 10,
   },
+
+  {
+    href: "/partners",
+    icon: <Partners />,
+    label: "Партнерам",
+    id: 11,
+  },
+
+  {
+    href: "/fa",
+    icon: <FA />,
+    label: "2FA и KYC",
+    id: 12,
+  }
 ];
