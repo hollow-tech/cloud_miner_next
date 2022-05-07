@@ -10,6 +10,7 @@ export const VariantStyled = styled.div`
   block-size: 446px;
   margin-left: 100px;
   position: relative;
+  margin-bottom: 500px;
 `;
 
 export const VariantBackground = styled.div`
@@ -25,9 +26,9 @@ export const VariantBackground = styled.div`
 
 export const VariantButton = styled(Button)`
   position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+  bottom: 20px;
+  right: 40px;
+  z-index: 2;
 `;
 
 export const VariantCard = styled.div`
@@ -38,10 +39,11 @@ export const VariantCard = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   &:hover {
     transform: translate3d(-40px, -83px, 0);
     transition: transform 0.3s linear;
+    opacity: 1;
   }
 `;
 

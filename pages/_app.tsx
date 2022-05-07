@@ -1,15 +1,16 @@
-import '../styles/global-styles'
-import type { AppProps } from 'next/app'
-import "../styles/app.css";
-import React from "react";
+import '../styles/global-styles';
+import type { AppProps } from 'next/app';
+import '../styles/app.css';
+import React from 'react';
+// import '../styles/calendar.css';
 
-import type { ReactElement, ReactNode } from "react";
-import type { NextPage } from "next";
+import type { ReactElement, ReactNode } from 'react';
+import type { NextPage } from 'next';
 
-import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "../styles/global-styles";
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from '../styles/global-styles';
 
-import { theme } from "../styles/theme";
+import { theme } from '../styles/theme';
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

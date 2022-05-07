@@ -5,5 +5,6 @@ export interface VariantsProps {
   currency?: ReactNode;
   oldPrice?: string;
   payment?: string;
-  available?: boolean;
+  buttonType?: string;
+  oldPayment?: string;
 }

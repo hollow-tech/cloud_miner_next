@@ -10,6 +10,7 @@ import { Checkbox, ToggleSwitch } from '../components/Checkboxs';
 import { CryptoInfo } from '../components/CryptoInfo';
 import { Typography } from '../components/Typography';
 import { Aside } from '../modules/Aside';
+import { Calendar } from '../components/Calendar';
 
 const Home: NextPage = () => {
   return (
@@ -38,6 +39,7 @@ const Home: NextPage = () => {
       <Menu label={'admin.com'}></Menu>
       <CryptoInfo></CryptoInfo>
       <Variant></Variant>
+      <Calendar></Calendar>
     </>
   );
 };
